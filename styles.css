@@ -1,0 +1,166 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+
+footer a,
+p {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+
+.content .box .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+
+.content .lower i {
+  padding-right: 16px;
+}
+
+.content .middle {
+  padding-left: 80px;
+}
+
+.content .middle a {
+  line-height: 32px;
+}
+
+.content .right input[type="text"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222;
+}
+
+.content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+
+.content .right input[type="submit"]:hover {
+  background: none;
+  color: #eb2f06;
+}
+
+.content .right .social-icons a {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+.content .right .social-icons a:hover {
+  border-color: #eb2f06;
+}
+
+footer a:hover {
+  color: #eb2f06;
+}
+
+footer .bottom {
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom a {
+  color: #eb2f06;
+}
+
+footer .bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer {
+    position: relative;
+  }
+
+  footer .content .box {
+    width: 50%;
+  }
+
+  footer .content .box.right {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  footer .content .box.middle {
+    padding-left: 0;
+  }
+}
